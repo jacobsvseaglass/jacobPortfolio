@@ -1,0 +1,3 @@
+Bug Blast is a top-down twin-stick space shooter where the player controls a spaceship and must stand against the hive of alien space bugs that are invading our solar system. Soar through the stars and recover fallen space stations from the war, gaining new weapons and eventually facing the hive mind.
+
+The team was made up of 5 people, and we used a custom C++ engine. My focus was mainly within behavior and controllers in the custom C++ engine. I developed the player controller with both mouse/keyboard and controller inputs and implemented swarm behavior and functionality of enemies. As the producer, I wrote and delegated the documentation and prepared the team to meet each milestone with success.

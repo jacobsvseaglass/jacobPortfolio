@@ -1,0 +1,1 @@
+export const Email = 'jacob@svseaglass.com';

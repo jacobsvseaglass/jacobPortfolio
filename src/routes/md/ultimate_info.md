@@ -1,0 +1,3 @@
+Bug Blast Ultimate is a fast paced, style based neon FPS in which you have to fight through futuristic bugs with a large assortment of weaponry. Players must navigate procedurally generated levels, unlocking guns with limited ammo while wall jumping and dodging to rack up points and destroy a variety of enemies.
+
+The team was made up of 5 people, and we used the Unity engine 2021.3.17. As an AI tools programmer, I worked on programming a tool to create custom behavior trees in Unity. I also developed an editor tool to create blackboards. I used these tools in addition to an agent system I worked on to develop the core AI in the game. As the VR developer, I ported the game to VR and adapted gameplay mechanics to function in virtual reality.

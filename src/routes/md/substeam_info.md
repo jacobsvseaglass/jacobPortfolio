@@ -1,0 +1,3 @@
+Substeam is a 2D action platformer set in a post-apocalyptic underwater world. Fight your way through steam-punk robots and traverse through the dangerous landscape as you upgrade your armor and weapons in hope to overthrow the AI’s reign of terror.
+
+The team was made up of 5 people, and we used the Zero Engine (Javascript based engine). I was the tech lead of the project and did most of the code as well as delegated out programming tasks accordingly. I programmed core back-end features such as the inventory, and developed gameplay mechanics including the player controller, enemy behaviors, environmental hazards, and the dynamic camera.

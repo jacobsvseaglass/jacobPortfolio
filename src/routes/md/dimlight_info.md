@@ -1,0 +1,3 @@
+Dimlight Dungeon is a 2D dark fantasy side scrolling brawler where the player controls a reptilian monster and travels within the ruins of a once mighty, heroic fortress. There the player must battle through rooms of knights to reach the final room and reclaim their lost land.
+
+The team was made up of 13 people, and we built a custom C++ engine. In this project, I integrated the audio system FMOD studio and an input system into the custom C++ engine. Additionally, I engineered many gameplay mechanics including enemy behaviors. As a producer, I collaborated closely and supported each discipline to make sure expectations were met for every milestone.

@@ -1,0 +1,5 @@
+Jacob Burke is a passionate software engineer skilled in C++, C#, Javascript and familiar in a wide variety of other programs. Raised on a sailboat while traveling the world, he grew in his love for creating games to enjoy with others regardless of cultures or language barriers. Once back in the US, he received his BS in Computer Science and Game Design from DigiPen Institute of Technology. In this endeavor he led several multi-discipline teams of up to 17 people in the making of many shipped games. During the end of his education, Jacob teamed up with creatives to create Strata, an immersive live performance tool that he had the exciting opportunity to help present at a film festival in Germany. He then joined Hexagram as a Gameplay Engineer alongside talented, inspiring people solving the technical and design challenges of creating engaging experiences and games.
+
+Jacob specializes in gameplay, tools, and engine programming. He also has additional skills in UI/UX design, gameplay design, and project management.
+
+In his free time, Jacob enjoys sailing, painting, 3D printing, and taking care of his guinea pigs.
