@@ -5,10 +5,9 @@
 
 <div class="text-column">
 
-	<iframe src="src\lib\pdf\JacobABurke_Resume_02242025.pdf" title="Resume PDF" width="100%" height="1200px" style="border: none;"></iframe>
+	<iframe src="/pdf/JacobABurke_Resume_02242025.pdf" title="Resume PDF" width="100%" height="1200px" style="border: none;"></iframe>
     <p>
-        <a href="src\lib\pdf\JacobABurke_Resume_02242025.pdf
-" download>
+        <a href="/pdf/JacobABurke_Resume_02242025.pdf" download>
             <button>Download Resume</button>
         </a>
     </p>

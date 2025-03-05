@@ -3,7 +3,7 @@
     export let name = "Name";
     export let role = "Role";
     export let description = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.";
-    export let videoSrc = "src/lib/videos/bugblast_loop.mp4";
+    export let videoSrc = "";
     export let imageSrc = "";
     export let tags: string[] = [];
     export let visibility = "visible";
