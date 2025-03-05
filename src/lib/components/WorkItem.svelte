@@ -154,4 +154,20 @@
     .opacity {
         opacity: 0.6;
     }
+
+    /* CSS to prevent fullscreen and maintain the size */
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+        -webkit-overflow-scrolling: touch;
+        overflow: hidden;
+    }
+
+    /* Optional: Ensuring the video container remains responsive */
+    .card {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
 </style>
