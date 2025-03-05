@@ -49,7 +49,7 @@
         position: relative;
         width: 100%;
         margin: auto;
-		background-color: var(--color-bg-1);
+        background-color: var(--color-bg-1);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .carousel-content {
@@ -87,8 +87,7 @@
         display: flex;
         justify-content: center;
         padding: 10px;
-		background-color: var(--color-bg-1);
-
+        background-color: var(--color-bg-1);
     }
     .thumbnail {
         width: 90px;
@@ -100,5 +99,15 @@
     }
     .active-thumbnail {
         border-color: #3498db;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+    @media (max-width: 600px) {
+        iframe {
+            width: 100%;
+            height: auto;
+        }
     }
 </style>

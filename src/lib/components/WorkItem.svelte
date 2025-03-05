@@ -28,7 +28,7 @@
         <div class="card">
             {#if videoSrc}
                 <video autoplay muted loop style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
-                <source src={videoSrc} type="video/mp4">
+                <source src={videoSrc} type="video/webm">
                 This browser does not support videos
                 </video>
             {:else}
@@ -59,15 +59,21 @@
         margin: auto;
     }
     .flex-item {
-        background-color: var(--color-bg-0);
-        border-radius: 12px;
-        flex: 1 1 calc(50% - 16px);
-        box-sizing: border-box;
-        margin-bottom: 16px;
-        min-width: 350px;
-        max-width: 600px;
-        position: relative;
-        overflow: hidden;
+    background-color: var(--color-bg-0);
+    border-radius: 12px;
+    flex: 1 1 calc(50% - 16px);
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    min-width: 350px;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    }
+
+    @media (max-width: 600px) {
+        .flex-item {
+            min-width: 300px; /* Adjust this value as needed */
+        }
     }
     .flex-item span {
         position: relative;
