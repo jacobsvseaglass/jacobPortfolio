@@ -27,7 +27,7 @@
     <span>
         <div class="card">
             {#if videoSrc}
-                <video autoplay muted loop style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
+                <video autoplay playsinline muted loop style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
                 <source src={videoSrc} type="video/webm">
                 This browser does not support videos
                 </video>
@@ -47,6 +47,7 @@
         </div>
     </span>
 </div>
+
   
 <!-- Conditionally render the modal -->
 {#if showModal}
