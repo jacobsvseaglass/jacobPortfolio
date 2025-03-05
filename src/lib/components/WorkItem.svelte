@@ -1,6 +1,5 @@
 <script lang="ts">
-    import Modal from './modal.svelte';
-  
+    import Modal from './Modal.svelte';
     export let name = "Name";
     export let role = "Role";
     export let description = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.";
