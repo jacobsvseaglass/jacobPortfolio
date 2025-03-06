@@ -101,7 +101,7 @@
         border-color: #3498db;
     }
     iframe {
-        width: 100%;
+        width: auto;
         height: auto;
     }
     @media (max-width: 600px) {

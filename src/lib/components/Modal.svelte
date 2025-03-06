@@ -35,14 +35,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: var(--color-bg-2);
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 1000;
     }
     .modal-content {
-        background-color: var(--color-bg-0);
+        background-color: var(--color-bg-1);
         padding: 1rem;
         border-radius: 8px;
         max-width: 1000px;
@@ -66,7 +66,7 @@
     }
     .modal-text {
         font-size: 1rem;
-        color: #ffffff;
+        color: var(--color-text);
     }
     .modal-info {
         text-align: center;

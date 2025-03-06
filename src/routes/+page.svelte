@@ -14,8 +14,7 @@
 	<div class="startcontainer">
 		<img src="/images/portrait.jpg" alt="Rounded Image" class="rounded-image" width="300px" >
 		<div class="text-content">
-		  <p>Jacob Burke is a passionate software engineer skilled in C++, C#, Javascript and familiar in a wide variety of other programs. Raised on a sailboat while traveling the world, he grew in his love for creating games to enjoy with others regardless of cultures or language barriers. Once back in the US, he received his BS in Computer Science and Game Design from DigiPen Institute of Technology. In this endeavor he led several multi-discipline teams of up to 17 people in the making of many shipped games. During the end of his education, Jacob teamed up with creatives to create Strata, an immersive live performance tool that he had the exciting opportunity to help present at a film festival in Germany. He then joined Hexagram as a Gameplay Engineer alongside talented, inspiring people solving the technical and design challenges of creating engaging experiences and games.</p>
-	
+		  <p>Jacob Burke is a passionate software engineer with expertise in C++, C#, and JavaScript. Raised on a sailboat while traveling the world, he developed a love for creating games that bridge cultural and language barriers. After earning his BS in Computer Science and Game Design from DigiPen Institute of Technology, he led multi-discipline teams to develop and ship various games. Jacob co-created Strata, an immersive live performance tool, and presented it at a film festival in Germany. He then joined Hexagram as a Gameplay Engineer, tackling technical and design challenges to create engaging experiences.</p>
 		  <p>Jacob specializes in gameplay, tools, and engine programming. He also has additional skills in UI/UX design, gameplay design, and project management.</p>
 	
 		  <p>In his free time, Jacob enjoys sailing, painting, 3D printing, and taking care of his guinea pigs.</p>
@@ -23,7 +22,7 @@
 	</div>
 
 	<section id="professional_projects">
-	<div class="container" style="padding:128px 16px" id="professional_projects">
+	<div class="container" style="padding:16px 16px" id="professional_projects">
 		<h2 class="center underline">Professional Projects</h2>
 		<div class="flex-container" style="margin-top:32px">
 			<WorkItem
@@ -69,7 +68,7 @@
 	</section>
 
 	<section id="academic_projects">
-		<div class="container" style="padding:128px 16px" id="academic_projects">
+		<div class="container" style="padding:16px 16px" id="academic_projects">
 			<h2 class="center underline">Academic Projects</h2>
 			<div class="flex-container" style="margin-top:32px">
 				<WorkItem
@@ -135,7 +134,7 @@
 	</section>
 
 	<section id="game_jams">
-		<div class="container" style="padding:128px 16px" id="game_jams">
+		<div class="container" style="padding:16px 16px" id="game_jams">
 			<h2 class="center underline">Game Jams</h2>
 			<div class="flex-container" style="margin-top:32px">
 				<WorkItem

@@ -94,11 +94,11 @@
     }
     .flex-item:before {
         height: 0%;
-        width: 3px;
+        width: 4.5px;
     }
     .flex-item:after {
         width: 0%;
-        height: 3px;
+        height: 4.5px;
     }
     .flex-item:hover:before {
         height: 100%;
@@ -117,12 +117,12 @@
         z-index: 1;
     }
     .flex-item span:before {
-        width: 3px;
+        width: 4.5px;
         height: 0%;
     }
     .flex-item span:after {
         width: 0%;
-        height: 3px;
+        height: 4.5px;
     }
     .flex-item span:hover:before {
         height: 100%;
