@@ -14,9 +14,11 @@
   
     function openModal() {
       showModal = true;
+      document.body.style.overflow = 'hidden'; // Hide the body scroll bar
     }
     function closeModal() {
       showModal = false;
+      document.body.style.overflow = 'auto'; // Restore the body scroll bar
     }
 </script>
   
@@ -73,6 +75,10 @@
         margin: 0; 
         padding: 0; 
         overflow: hidden; 
+    }
+    .flex-item:hover .content h3 {
+    color: var(--color-highlight-0);
+    transition: color 0.3s ease;
     }
 
 
@@ -148,7 +154,7 @@
     .rounded-container {
         background-color: var(--color-tag-0);
         padding: 0.25em 0.5em;
-        font-size: 0.9em;
+        font-size: 0.735em;
         border: 1px solid #333;
         border-radius: 12px;
         margin: 0.25em 0;

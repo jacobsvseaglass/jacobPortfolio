@@ -21,7 +21,7 @@
 	button {
 	  padding: 10px 20px;
 	  font-size: 16px;
-	  background-color: var(--color-theme-1);
+	  background-color: var(--color-tag-0);
 	  color: #fff;
 	  border: none;
 	  border-radius: 5px;
@@ -29,7 +29,7 @@
 	}
   
 	button:hover {
-	  background-color: var(--color-theme-2);
+	  background-color: var(--color-highlight-0);
 	}
 </style>
   

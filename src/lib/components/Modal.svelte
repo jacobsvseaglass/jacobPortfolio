@@ -2,8 +2,8 @@
     import ButtonComponent from './Button.svelte';
     import { createEventDispatcher } from 'svelte';
     import YTSlideshow from './YTSlideshow.svelte';
-    export let youtubeUrls: string[] = []; // Changed to array
-    export let captions: string[] = [""]; // Array of captions for each video
+    export let youtubeUrls: string[] = []; 
+    export let captions: string[] = [""];
     export let modalText: string = '';
     export let modalTitle: string = '';
     export let modalInfo: string = '';
@@ -27,27 +27,26 @@
             <h1>{modalTitle}</h1>
         </div>
         <button class="close-button" on:click={closeModal}>×</button>
-        {#if youtubeUrls.length > 0}
+        {#if youtubeUrls[0]}  <!-- Only show video if the first URL is non-empty -->
             <YTSlideshow {youtubeUrls} {captions} />
-            <div class="modal-text">
-                <div class="modal-info" style="padding: 25px">
-                    {@html modalInfo}
-                </div>
-                <!-- Center the buttons container -->
-                <div class="center-buttons">
-                    {#each buttons as button}
-                        <ButtonComponent text={button.text} image={button.img} link={button.link} />
-                    {/each}
-                </div>
-            </div>
         {/if}
-        <h3> About </h3>
+        <div class="modal-text">
+            <div class="modal-info" style="padding: 25px">
+                <b>{@html modalInfo}</b>
+            </div>
+            <!-- Always show the buttons container -->
+            <div class="center-buttons">
+                {#each buttons as button}
+                    <ButtonComponent text={button.text} image={button.img} link={button.link} />
+                {/each}
+            </div>
+        </div>
+        <h3>About</h3>
         {@html modalAbout}
-        <h3> Contributions </h3>
+        <h3>Contributions</h3>
         {@html modalText}
     </div>
 </div>
-
 
 <style>
     .modal-overlay {
@@ -96,8 +95,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; /* Optional: If you want the buttons stacked vertically */
-        gap: 10px; /* Optional: Adjust the spacing between buttons */
+        flex-direction: column;
+        gap: 10px;
     }
-
 </style>

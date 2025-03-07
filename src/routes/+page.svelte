@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>Jacob Burke</title>
-	<meta name="description" content="Jacob Burke's Personal Website" />
+	<meta name="description" content="Portfolio Website" />
 	<!--javy said add this to help with mobile device scaling-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
@@ -23,7 +23,7 @@
 	</div>
 
 	<section id="professional_projects">
-	<div class="container" style="padding:16px 16px" id="professional_projects">
+	<div class="container" style="padding:64px 16px" id="professional_projects">
 		<h2 class="center underline">Professional Projects</h2>
 		<div class="flex-container" style="margin-top:32px">
 			<WorkItem
@@ -63,7 +63,7 @@
 	</section>
 
 	<section id="academic_projects">
-		<div class="container" style="padding:16px 16px" id="academic_projects">
+		<div class="container" style="padding:64px 16px" id="academic_projects">
 			<h2 class="center underline">Academic Projects</h2>
 			<div class="flex-container" style="margin-top:32px">
 				<WorkItem
@@ -120,7 +120,7 @@
 	</section>
 
 	<section id="game_jams">
-		<div class="container" style="padding:16px 16px" id="game_jams">
+		<div class="container" style="padding:64px 16px" id="game_jams">
 			<h2 class="center underline">Game Jams</h2>
 			<div class="flex-container" style="margin-top:32px">
 				<WorkItem
@@ -135,7 +135,7 @@
 					role="Programmer"
 					description="Roll around orc time"
 					videoSrc="/videos/orcball_loop.webm"
-					modal= 0;
+					modal= {modals.OrcBall};
 				/>
 				<WorkItem
 					name="This Website"

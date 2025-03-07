@@ -80,10 +80,11 @@ h1 {
     align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .startcontainer {
         flex-direction: row;
         align-items: flex-start;
+		align-items: center;
     }
 }
 

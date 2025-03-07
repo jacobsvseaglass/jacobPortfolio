@@ -30,7 +30,7 @@
 
 <style>
     .nav-padding {
-        padding-right: 30px; /* Adjust the value as needed */
+        padding-right: 20px; /* Adjust the value as needed */
     }
     header {
         position: fixed;
@@ -54,12 +54,14 @@
     h1 {
         margin: 0;
         font-size: 1.5em;
+        text-align: center;
     }
 
     h2 {
         margin: 0;
         font-size: 1em;
         color: gray;
+        text-align: center;
     }
 
     nav ul {
@@ -86,7 +88,11 @@
         position: absolute;
         top: 100%;
         left: 0;
+        margin-top: 0; /* Removed extra distance between projects and dropdown */
         background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 8px; /* Rounded corners */
+        z-index: 1001;
     }
 
     nav ul li:hover .dropdown {
@@ -101,6 +107,13 @@
         display: block;
         padding: 0.5em 1em;
         white-space: nowrap;
+        color: #333; /* Darker text color */
+        text-decoration: none;
+        border-radius: 8px; /* Ensure the highlighting matches the rounded corners */
+    }
+
+    nav ul li .dropdown li a:hover {
+        background-color: #f2f2f2; /* Light gray hover effect */
     }
 
     main {
