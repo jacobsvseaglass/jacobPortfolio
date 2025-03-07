@@ -3,7 +3,7 @@
     import { createEventDispatcher } from 'svelte';
     import YTSlideshow from './YTSlideshow.svelte';
     export let youtubeUrls: string[] = []; // Changed to array
-    export let captions: string[] = ["This is a nice caption", "Another nice caption"]; // Array of captions for each video
+    export let captions: string[] = [""]; // Array of captions for each video
     export let modalText: string = '';
     export let modalTitle: string = '';
     export let modalInfo: string = '';
@@ -27,24 +27,27 @@
             <h1>{modalTitle}</h1>
         </div>
         <button class="close-button" on:click={closeModal}>×</button>
-        <YTSlideshow {youtubeUrls} {captions} />
-        <div class="modal-text">
-            <div class="modal-info" style="padding: 25px">
-                {@html modalInfo}
+        {#if youtubeUrls.length > 0}
+            <YTSlideshow {youtubeUrls} {captions} />
+            <div class="modal-text">
+                <div class="modal-info" style="padding: 25px">
+                    {@html modalInfo}
+                </div>
+                <!-- Center the buttons container -->
+                <div class="center-buttons">
+                    {#each buttons as button}
+                        <ButtonComponent text={button.text} image={button.img} link={button.link} />
+                    {/each}
+                </div>
             </div>
-            <!-- Center the buttons container -->
-            <div class="center-buttons">
-                {#each buttons as button}
-                    <ButtonComponent text={button.text} img={button.img} link={button.link} />
-                {/each}
-            </div>
-            <h3> About </h3>
-            {@html modalAbout}
-            <h3> Contributions </h3>
-            {@html modalText}
-        </div>
+        {/if}
+        <h3> About </h3>
+        {@html modalAbout}
+        <h3> Contributions </h3>
+        {@html modalText}
     </div>
 </div>
+
 
 <style>
     .modal-overlay {

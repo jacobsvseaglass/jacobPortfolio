@@ -4,23 +4,35 @@ export const modals = {
     "Strata": {
         title: "Strata",
         videoSrc: ["https://www.youtube.com/embed/be1vmLL5iI4"],
-        info: "",
-        about: "",
-        text: "<p><i>Strata</i> is a unique and innovative Unreal 5 application that I created for my interactive and performance art client. <i>Topography</i> uses this technology and techniques in documentary film and interactive media to explore a set of overlapping philosophies of land-use in the area in a particular region in South Dakota in and around the Badlands National Park. Ultimately, this project will include a feature length documentary film, an installation at a major interactive festival, and series of performances, some of which are already underway.</p><p>As the prototype developer, I worked with project directors to create prototypes proving out the concept, visuals, and mechanics of the experience. I imported and optimized motion capture data and photogrammetry scans. I also developed custom shaders for environmental features and created several camera controllers that utilize a live-streaming toolkit. I built the user interface for performers to use, where they can select and customize key values and content elements in real-time.</p><p>In the latest phase, I collaborated with project directors to create prototypes for interactive technical installations adaptable for any setting or structure. I worked with Unreal virtual production tools allowing for real-time features in conjunction with needed assets and effects on the project to be conveyed in real-world spaces. I also designed tools for recording both media and audio outputs from Unreal for use in installations.</p>"
+        buttons: [
+            {
+                text: "Headlands Center For The Arts 2022",
+                img: "",
+                link: "https://www.headlands.org/event/project-space-hannah-jayanti/"
+            },
+            {
+                text: "transmediale 2023",
+                img: "",
+                link: "https://2023.transmediale.de/en/event/strata"
+            },
+        ],
+        info: "<b>Prototype Developer    |    Unreal Engine 5",
+        about: "<i>Strata</i> is a unique and innovative Unreal 5 application that I created for my interactive and performance art client. <i>Topography</i> uses this technology and techniques in documentary film and interactive media to explore a set of overlapping philosophies of land-use in the area in a particular region in South Dakota in and around the Badlands National Park. Ultimately, this project will include a feature length documentary film, an installation at a major interactive festival, and series of performances, some of which are already underway.",
+        text: "<p><h4>Phase One - Live Streaming Application</h4></p><p>• Collaborated with project directors to create prototypes proving out the concept, visuals, and mechanics of the experience.</p> • Imported and optimized motion capture data and photogrammetry scans. <p>• Developed custom shaders for environmental features and created several camera controllers that utilize a live-streaming toolkit.</p><p> • Built the user interface for performers to use, where they can select and customize key values and content elements in real-time.</p> <p><h4>Phase Two - Physical Installation</h4></p><p>• Collaborated with project directors to create prototypes for interactive technical installations adaptable for any setting or structure.</p><p>• Developed with Unreal virtual production tools allowing for real-time features in conjunction with needed assets and effects on the project to be conveyed in real-world spaces.</p><p>• Designed tools for recording both media and audio outputs from Unreal for use in installations.</p>"
     },
     "Metasites": {
         title: "Metasites",
         videoSrc: ["https://www.youtube.com/embed/ujXNyhOZYFs"],
-        info: "",
-        about: "",
-        text: "<p>\"Metasites is a modular 3D internet framework built by XLA, that provides individual creators with the capacity to deploy their Unreal Engine-built content and connect it to the XLA ecosystem of features and services. The presentation revealed high fidelity graphics core experience, instant access to the system in the cloud through the browser, OpenAI’s GPT-3.5 integration powering non-active characters and their behavior, virtual assistant IVEE, ability to semantically analyze text and generate 3D scenes in UE5 and many other features.\" – Alexey Savchenko, XLA Chief Product Office</p> <p>On the project, my main focus was developing a custom Plugin in Unreal 5 to handle all the information between our company’s propriety event-driven distributed game server for asynchronous games and the XLA’s Unreal client. The plugin was engineered specifically to give tools to developers to access critical mechanics required for making and running different Metasites. I worked on the quest handler, game AI behavior (including conversations, spawning, movement, and actions), an abstract inventory manager, and player tracking. All of these features required work both on the plugin in Unreal C++ and blueprints, as well as network code on the game server.</p>"
+        info: "Gameplay Engineer | Unreal Engine 5",
+        about: "<p>\"Metasites is a modular 3D internet framework built by XLA, that provides individual creators with the capacity to deploy their Unreal Engine-built content and connect it to the XLA ecosystem of features and services. The presentation revealed high fidelity graphics core experience, instant access to the system in the cloud through the browser, OpenAI’s GPT-3.5 integration powering non-active characters and their behavior, virtual assistant IVEE, ability to semantically analyze text and generate 3D scenes in UE5 and many other features.\" – Alexey Savchenko, XLA Chief Product Office</p>",
+        text: "<p>• Developed a custom Plugin in Unreal 5 to handle all the information between our company’s propriety event-driven distributed game server for asynchronous games and the XLA’s Unreal client.</p><p>• Engineered the plugin specifically to give tools to developers to access critical mechanics required for making and running different Metasites.</p><p>• Worked on the quest handler, game AI behavior (including conversations, spawning, movement, and actions), an abstract inventory manager, and player tracking. All of these features required work both on the plugin in Unreal C++ and blueprints, as well as network code on the game server.</p>"
     },
     "Unannounced": {
         title: "Unannounced",
-        videoSrc: ["none"],
-        info: "",
-        about: "",
-        text: "<p>This unannounced project was a completed AI role-playing VR game prototype made for a major tech firm in Unity.</p><p>My main responsibility on this project was the procedural map generation, which required creating systems on both the company’s game server in JavaScript and the Unity client in C#. On the game server, I developed the map generator which handled creation of the maps from generated data in 2 different map scales. Using traditional procgen techniques combined with an AI generated art overlay API, this system created consistent maps that matched the desired gameplay and artistic goals of the prototype whenever a new procedural instance was made. I also dealt with storing the data in an accessible and compact fashion on the server. On the Unity Client, I programmed the functionalities to receive and display the data and handled the gameplay aspects of the map. I also created a tool in Unity to store and assign the relevant prototype’s art per each procedural instance. Finally, I created technical art and game transition states in regard to the map in game.</p>"
+        videoSrc: [],
+        info: "Gameplay Engineer | Unity",
+        about: "<p>This unannounced project was a completed AI role-playing VR game prototype made for a major tech firm in Unity.</p>",
+        text: "<p>• Created procedural map generation, which required creating systems on both the company’s game server in JavaScript and the Unity client in C#.</p><p>• Developed map generator on the game server which handled creation of the maps from generated data in 2 different map scales.</p><p>• Applied traditional procgen techniques combined with an AI generated art overlay API, making a system to create consistent maps that matched the desired gameplay and artistic goals of the prototype whenever a new procedural instance was made.</p><p>• Handled storing the data in an accessible and compact fashion on the server.</p><p>• Programmed the functionalities on the Unity Client to receive and display the data and handled the gameplay aspects of the map.</p><p>• Created a tool in Unity to store and assign the relevant prototype’s art per each procedural instance.</p><p>• Designed technical art and game transition states in regard to the map in game.</p>"
     },
     "BugBlastUltimate": {
         title: "Bug Blast Ultimate",
@@ -67,10 +79,17 @@ export const modals = {
     },
     "IngFish": {
         title: "IngFish",
-        videoSrc: ["link"],
+        videoSrc: [],
         info: "",
         about: "",
         text: "GMTK 2023 Game Jam Submission. In this game you play a normal fishing scenario, but you are the fish! Survive as long as you can as you rack up points from eating baits and escaping danger. This project was made by a team of 3 people in one day on Unity."
+    },
+    "OrcBall": {
+        title: "OrcBall",
+        videoSrc: [],
+        info: "",
+        about: "",
+        text: "GMTK 2024 Game Jam Submission. In this game you play a normal fishing scenario, but you are the fish! Survive as long as you can as you rack up points from eating baits and escaping danger. This project was made by a team of 3 people in one day on Unity."
     }
     // Add more modal data as needed
 };

@@ -31,7 +31,7 @@
 				role="Prototype Developer"
 				description="An Unreal application exploring overlapping land-use philosophies in the Badlands National Park, South Dakota, through documentary film and interactive media."
 				videoSrc="/videos/strata_loop.webm"
-				tags={["UE5", "C#", "Blueprints", "Virtual Production"]}
+				tags={["UE5", "C++", "Blueprints", "Virtual Production"]}
 				modal= {modals.Strata}
 			/>
 			<WorkItem
@@ -39,17 +39,16 @@
 				role="Gameplay Engineer"
 				description="Modular 3D internet framework that provides individual creators with the capacity to deploy their Unreal Engine-built content and connect it to the XLA ecosystem of features"
 				videoSrc="/videos/metasites_loop.webm"
-				tags={["UE5", "C#", "Blueprints", "AI"]}
+				tags={["UE5", "C++", "Blueprints", "AI"]}
 				modal= {modals.Metasites}
 			/>
 			<WorkItem
 				name="Unannounced Project"
 				role="Gameplay Engineer"
 				description="This unannounced project was a completed AI role-playing VR game prototype made for a major tech firm in Unity."
-				videoSrc="/videos/bugblast_loop.webm"
+				imageSrc="/images/unannouncedProject.webp"
 				tags={["Unity", "C++", "JavaScript", "AI"]}
 				modal= {modals.Unannounced}
-
 			/>
 			<WorkItem
 				name="BugBlast"
