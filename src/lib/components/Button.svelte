@@ -37,15 +37,16 @@
   </style>
   
   {#if text}
-	<a href={link} class="btn" target="_blank">
-	  {#if image}
-		<img src={image} alt={text || "Button image"} />
-	  {/if}
-	  <span>{text}</span>
-	</a>
-  {:else}
-	<a href={link} target="_blank">
-	  <img class="btn-only-image" src={image} alt="Clickable image" />
-	</a>
-  {/if}
+  <a href={link} class="btn" target="_blank">
+	{#if image}
+	  <img src={image} alt={text} />
+	{/if}
+	<span>{text}</span>
+  </a>
+{:else}
+  <a href={link} target="_blank">
+	<img class="btn-only-image" src={image} alt={text || "Clickable"} />
+  </a>
+{/if}
+
   

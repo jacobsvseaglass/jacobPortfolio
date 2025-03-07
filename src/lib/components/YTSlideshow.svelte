@@ -18,13 +18,14 @@
     }
 </script>
 
+
 <div class="carousel-container">
     <div class="carousel-content">
         {#if youtubeUrls.length > 1}
             <button class="navigation-arrow left-arrow" on:click={prevVideo}>&larr;</button>
         {/if}
         <div class="iframe-container">
-            <iframe src={youtubeUrls[currentVideoIndex]} frameborder="0" allowfullscreen></iframe>
+            <iframe src={youtubeUrls[currentVideoIndex]} frameborder="0" title="thumbnail" allowfullscreen></iframe>
         </div>
         {#if youtubeUrls.length > 1}
             <button class="navigation-arrow right-arrow" on:click={nextVideo}>&rarr;</button>
@@ -38,6 +39,8 @@
     {#if youtubeUrls.length > 1}
         <div class="thumbnail-container">
             {#each youtubeUrls as url, index}
+                <!-- svelte-ignore a11y_click_events_have_key_events -->
+                <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
                 <img src={url.replace("embed/", "vi/").replace("www", "img") + "/0.jpg"}
                      class="thumbnail {currentVideoIndex === index ? 'active-thumbnail' : ''}"
                      on:click={() => goToVideo(index)}

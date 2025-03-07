@@ -8,7 +8,7 @@
     export let modalTitle: string = '';
     export let modalInfo: string = '';
     export let modalAbout: string = '';
-    export interface Button {
+    interface Button {
         text: string;
         img: string;
         link: string;
@@ -21,6 +21,7 @@
     }
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="modal-overlay" on:click={closeModal}>
     <div class="modal-content" on:click|stopPropagation>
         <div class="modal-header">

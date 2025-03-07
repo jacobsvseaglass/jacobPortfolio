@@ -23,6 +23,7 @@
 </script>
   
 <!-- Work item display -->
+ <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="flex-item" style="visibility: {visibility};" role="button" tabindex="0" on:click={openModal}>
     <span>
         <div class="card">
@@ -158,8 +159,6 @@
         border: 1px solid #333;
         border-radius: 12px;
         margin: 0.25em 0;
-    }
-    .card {
     }
     .opacity {
         opacity: 0.6;

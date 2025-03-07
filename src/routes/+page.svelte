@@ -13,7 +13,7 @@
 
 <main>
 	<div class="startcontainer">
-		<img src="/images/portrait.jpg" alt="Rounded Image" class="rounded-image" width="300px" >
+		<img src="/images/portrait.jpg" alt="Portrait" class="rounded-image" width="300px" >
 		<div class="text-content">
 		  <p>Jacob Burke is a passionate software engineer with expertise in C++, C#, and JavaScript. Raised on a sailboat while traveling the world, he developed a love for creating games that bridge cultural and language barriers. After earning his BS in Computer Science and Game Design from DigiPen Institute of Technology, he led multi-discipline teams to develop and ship various games. Jacob co-created Strata, an immersive live performance tool, and presented it at a film festival in Germany. He then joined Hexagram as a Gameplay Engineer, tackling technical and design challenges to create engaging experiences.</p>
 		  <p>Jacob specializes in gameplay, tools, and engine programming. He also has additional skills in UI/UX design, gameplay design, and project management.</p>
@@ -162,13 +162,12 @@
 	<div class="contact-banner" style="background: var(--color-tag-0); text-align: center; padding: 20px">
 		<h1>Contact Me</h1>
 		<p>
-			*Contact paragraph that is short, professional, endearing, and makes people want to work with me*
+			Looking to collaborate? You can find my contact details on my resume.
 		</p>
 		<p>
-			I can be reached at email@myemail.com, more info on my resumes
+			Also, feel free to connect with me on LinkedIn or explore my projects on GitHub.
 		</p>
 		<div class="button-container">
-			<Button image="/images/email.svg" text="" link="https://www.linkedin.com/in/jacobaburke/" /> 
 			<Button image="/images/linkedin.webp" text="" link="https://www.linkedin.com/in/jacobaburke/" /> 
 			<Button image="/images/github.svg" text="" link = "https://github.com/jacobsvseaglass"/> 
 		</div>
