@@ -1,37 +1,51 @@
 <script>
-	import { goto } from '$app/navigation';
-	import { Email } from '$lib/Constants';
-</script>
-
-<div
-	class="button"
-	role="button"
-	tabindex="0"
-	on:keypress={() => {
-		goto(`mailto:${Email}`);
-	}}
-	on:click={() => goto(`mailto:${Email}`)}
->
-	<slot />
-</div>
-
-<style>
-	.button {
-		cursor: pointer;
-		height: 40px;
-		max-width: 200px;
-		border-radius: 10px;
-		background: #ca3c25;
-
-		background-size: 150% 150%;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-weight: 500;
+	export let image = '';
+	export let text = '';
+	export let link = '#';
+  </script>
+  
+  <style>
+	.btn {
+	  display: inline-flex;
+	  align-items: center;
+	  padding: 10px 20px;
+	  border: 2px solid var(--color-tag-0);
+	  background-color: var(--color-tag-0);
+	  color: white;
+	  border-radius: 5px;
+	  text-decoration: none;
+	  font-size: 16px;
+	  cursor: pointer;
+	  transition: background-color 0.3s, border-color 0.3s;
 	}
-
-	.button:hover {
-		animation: gradient 2s ease infinite;
+  
+	.btn:hover {
+	  background-color: var(--color-highlight-0);
+	  border-color: rgb(255, 255, 255);
 	}
-</style>
+  
+	.btn img {
+	  max-width: 40px;
+	  max-height: 40px;
+	  margin-right: 10px;
+	}
+  
+	.btn-only-image {
+	  max-width: 50px;
+	  max-height: 50px;
+	}
+  </style>
+  
+  {#if text}
+	<a href={link} class="btn" target="_blank">
+	  {#if image}
+		<img src={image} alt={text || "Button image"} />
+	  {/if}
+	  <span>{text}</span>
+	</a>
+  {:else}
+	<a href={link} target="_blank">
+	  <img class="btn-only-image" src={image} alt="Clickable image" />
+	</a>
+  {/if}
+  

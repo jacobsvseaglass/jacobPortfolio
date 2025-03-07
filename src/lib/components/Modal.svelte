@@ -1,10 +1,19 @@
 <script lang="ts">
+    import ButtonComponent from './Button.svelte';
     import { createEventDispatcher } from 'svelte';
     import YTSlideshow from './YTSlideshow.svelte';
     export let youtubeUrls: string[] = []; // Changed to array
     export let captions: string[] = ["This is a nice caption", "Another nice caption"]; // Array of captions for each video
     export let modalText: string = '';
     export let modalTitle: string = '';
+    export let modalInfo: string = '';
+    export let modalAbout: string = '';
+    export interface Button {
+        text: string;
+        img: string;
+        link: string;
+    }
+    export let buttons: Button[] = [];
     const dispatch = createEventDispatcher();
 
     function closeModal() {
@@ -20,9 +29,18 @@
         <button class="close-button" on:click={closeModal}>×</button>
         <YTSlideshow {youtubeUrls} {captions} />
         <div class="modal-text">
-            <div class="modal-info">
-                <h4>5 People    |    Unity Engine 2021.3.17    |    AI Tools Programmer & VR Developer</h4>
+            <div class="modal-info" style="padding: 25px">
+                {@html modalInfo}
             </div>
+            <!-- Center the buttons container -->
+            <div class="center-buttons">
+                {#each buttons as button}
+                    <ButtonComponent text={button.text} img={button.img} link={button.link} />
+                {/each}
+            </div>
+            <h3> About </h3>
+            {@html modalAbout}
+            <h3> Contributions </h3>
             {@html modalText}
         </div>
     </div>
@@ -71,4 +89,12 @@
     .modal-info {
         text-align: center;
     }
+    .center-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Optional: If you want the buttons stacked vertically */
+        gap: 10px; /* Optional: Adjust the spacing between buttons */
+    }
+
 </style>

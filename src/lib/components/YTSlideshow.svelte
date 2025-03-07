@@ -50,7 +50,6 @@
         width: 100%;
         margin: auto;
         background-color: var(--color-bg-1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .carousel-content {
         display: flex;

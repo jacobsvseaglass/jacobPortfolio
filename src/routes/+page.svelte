@@ -1,11 +1,12 @@
 <script lang="ts">
     import WorkItem from '$lib/components/WorkItem.svelte';
+	import Button from '$lib/components/Button.svelte';
     import { modals } from './modalData';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Jacob Burke</title>
+	<meta name="description" content="Jacob Burke's Personal Website" />
 	<!--javy said add this to help with mobile device scaling-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
@@ -31,9 +32,7 @@
 				description="An Unreal application exploring overlapping land-use philosophies in the Badlands National Park, South Dakota, through documentary film and interactive media."
 				videoSrc="/videos/strata_loop.webm"
 				tags={["UE5", "C#", "Blueprints", "Virtual Production"]}
-				modalText= {modals.Strata.text}
-				modalUrls= {modals.Strata.videoSrc}
-				modalTitle = {modals.Strata.title}
+				modal= {modals.Strata}
 			/>
 			<WorkItem
 				name="XLA Metasites"
@@ -41,9 +40,7 @@
 				description="Modular 3D internet framework that provides individual creators with the capacity to deploy their Unreal Engine-built content and connect it to the XLA ecosystem of features"
 				videoSrc="/videos/metasites_loop.webm"
 				tags={["UE5", "C#", "Blueprints", "AI"]}
-				modalText= {modals.Metasites.text}
-				modalUrls= {modals.Metasites.videoSrc}
-				modalTitle = {modals.Metasites.title}
+				modal= {modals.Metasites}
 			/>
 			<WorkItem
 				name="Unannounced Project"
@@ -51,9 +48,7 @@
 				description="This unannounced project was a completed AI role-playing VR game prototype made for a major tech firm in Unity."
 				videoSrc="/videos/bugblast_loop.webm"
 				tags={["Unity", "C++", "JavaScript", "AI"]}
-				modalText= {modals.Unannounced.text}
-				modalUrls= {modals.Unannounced.videoSrc}
-				modalTitle = {modals.Unannounced.title}
+				modal= {modals.Unannounced}
 
 			/>
 			<WorkItem
@@ -62,6 +57,7 @@
 				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim"
 				videoSrc="/videos/bugblast_loop.webm"
 				visibility="hidden"
+				modal= 0;
 			/>
 		</div>
 	</div>
@@ -77,9 +73,7 @@
 					description="Fast paced, style based neon FPS in which you have to fight through futuristic bugs with a large assortment of weaponry. BREAK"
 					videoSrc="/videos/bugblastultimate_loop.webm"
 					tags={["Unity", "C#"]}
-					modalText= {modals.BugBlastUltimate.text}
-					modalUrls= {modals.BugBlastUltimate.videoSrc}
-					modalTitle = {modals.BugBlastUltimate.title}
+					modal = {modals.BugBlastUltimate}
 				/>
 				<WorkItem
 					name="Anesthesia"
@@ -87,9 +81,7 @@
 					description="Atmospheric 3D puzzle horror game in which a young patient undergoing surgery at a hospital faces her fears in a surreal dreamscape."
 					videoSrc="/videos/anesthesia_loop.webm"
 					tags={["Unreal", "C++"]}
-					modalText= {modals.Anesthesia.text}
-					modalUrls= {modals.Anesthesia.videoSrc}
-					modalTitle = {modals.Anesthesia.title}
+					modal= {modals.Anesthesia}
 				/>
 				<WorkItem
 					name="Dimlight Dungeon"
@@ -97,9 +89,7 @@
 					description="2D dark fantasy side scrolling brawler where the player controls a reptilian monster and travels within the ruins of a once mighty, heroic fortress."
 					videoSrc="/videos/dimlight_loop.webm"
 					tags={["Custom Engine", "C++"]}
-					modalText= {modals.Dimlight.text}
-					modalUrls= {modals.Dimlight.videoSrc}
-					modalTitle = {modals.Dimlight.title}
+					modal= {modals.Dimlight}
 				/>
 				<WorkItem
 					name="Bug Blast"
@@ -107,9 +97,7 @@
 					description="Top-down twin-stick space shooter where the player controls a spaceship and must stand against the hive of alien space bugs that are invading our solar system."
 					videoSrc="/videos/bugblast_loop.webm"
 					tags={["Custom Engine", "C++"]}
-					modalText= {modals.BugBlast.text}
-					modalUrls= {modals.BugBlast.videoSrc}
-					modalTitle = {modals.BugBlast.title}
+					modal= {modals.BugBlast}
 				/>
 				<WorkItem
 					name="Substeam"
@@ -117,9 +105,7 @@
 					description="2D action platformer set in a post-apocalyptic underwater world. Fight your way through steam-punk robots and traverse through the dangerous landscape BREAK"
 					videoSrc="/videos/substeam_loop.webm"
 					tags={["Custom Engine", "Javascript"]}
-					modalText= {modals.Substeam.text}
-					modalUrls= {modals.Substeam.videoSrc}
-					modalTitle = {modals.Substeam.title}
+					modal= {modals.Substeam}
 				/>
 				<WorkItem
 					name="Substeam"
@@ -128,6 +114,7 @@
 					videoSrc="/videos/bugblast_loop.webm"
 					tags={["Custom Engine", "Javascript"]}
 					visibility="hidden"
+					modal=0;
 				/>
 			</div>
 	</div>
@@ -142,20 +129,21 @@
 					role="Programmer"
 					description="Play a normal fishing scenario, but you are the fish! "
 					videoSrc="/videos/ingfish_loop.webm"
-					modalText= {modals.IngFish.text}
-					modalUrls= {modals.IngFish.videoSrc}
+					modal= {modals.IngFish}
 				/>
 				<WorkItem
 					name="Orc Ball"
 					role="Programmer"
 					description="Roll around orc time"
 					videoSrc="/videos/orcball_loop.webm"
+					modal= 0;
 				/>
 				<WorkItem
 					name="This Website"
 					role="Programmer"
 					description="The whole website you are on right now"
 					videoSrc="/videos/bugblast_loop.webm"
+					modal= 0;
 				/>
 				<WorkItem
 					name="This Website"
@@ -163,8 +151,27 @@
 					description="The whole website you are on right now"
 					videoSrc="/videos/bugblast_loop.webm"
 					visibility="hidden"
+					modal= 0;
 				/>
 			</div>
 	</div>
 	</section>
+	
 </main>
+
+<section id="contact">
+	<div class="contact-banner" style="background: var(--color-tag-0); text-align: center; padding: 20px">
+		<h1>Contact Me</h1>
+		<p>
+			*Contact paragraph that is short, professional, endearing, and makes people want to work with me*
+		</p>
+		<p>
+			I can be reached at email@myemail.com, more info on my resumes
+		</p>
+		<div class="button-container">
+			<Button image="/images/email.svg" text="" link="https://www.linkedin.com/in/jacobaburke/" /> 
+			<Button image="/images/linkedin.webp" text="" link="https://www.linkedin.com/in/jacobaburke/" /> 
+			<Button image="/images/github.svg" text="" link = "https://github.com/jacobsvseaglass"/> 
+		</div>
+	</div>
+</section>

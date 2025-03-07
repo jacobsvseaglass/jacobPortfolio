@@ -8,24 +8,20 @@
         <h2>Software Engineer</h2>
     </div>
 
-    <nav>
+    <nav class="nav-padding">
         <ul>
-            <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-                <a href="/">Projects</a>
-                <ul class="dropdown">
-                    <li><a href="/#professional_projects">Professional Projects</a></li>
-                    <li><a href="/#academic_projects">Academic Projects</a></li>
-                    <li><a href="/#game_jams">Game Jams</a></li>
-                </ul>
-            </li>
-        
-            <li><a href="/resume">Resume</a></li>
-            <!--<li><a href="#contact">Contact</a></li>-->
-            <li><a href="https://www.linkedin.com/in/jacobaburke/" target="_blank" rel="noopener noreferrer">
-                <!--<img src="path/to/linkedin/icon.svg" alt="LinkedIn" />-->
-            </a></li>
+          <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+            <a href="/">Projects</a>
+            <ul class="dropdown">
+              <li><a href="/#professional_projects">Professional Projects</a></li>
+              <li><a href="/#academic_projects">Academic Projects</a></li>
+              <li><a href="/#game_jams">Game Jams</a></li>
+            </ul>
+          </li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/resume">Resume</a></li>
         </ul>
-    </nav>
+      </nav>
 </header>
 
 <main>
@@ -33,6 +29,9 @@
 </main>
 
 <style>
+    .nav-padding {
+        padding-right: 30px; /* Adjust the value as needed */
+    }
     header {
         position: fixed;
         top: 0;

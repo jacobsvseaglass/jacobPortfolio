@@ -8,9 +8,7 @@
     export let tags: string[] = [];
     export let visibility = "visible";
 
-    export let modalUrls = ["https://www.youtube.com/embed/VIDEO_ID"];
-    export let modalText = "This is some additional info about the project.";
-    export let modalTitle = "";
+    export let modal;
   
     let showModal = false;
   
@@ -51,7 +49,7 @@
   
 <!-- Conditionally render the modal -->
 {#if showModal}
-  <Modal youtubeUrls={modalUrls} modalText={modalText} modalTitle={modalTitle} on:close={closeModal} />
+  <Modal buttons={modal.buttons} youtubeUrls={modal.videoSrc} modalText={modal.text} modalTitle={modal.title} modalAbout={modal.about} modalInfo={modal.info} on:close={closeModal} />
 {/if}
 
 <style>
@@ -70,6 +68,13 @@
     position: relative;
     overflow: hidden;
     }
+    .flex-item[style*="visibility: hidden"] {
+        height: 0;
+        margin: 0; 
+        padding: 0; 
+        overflow: hidden; 
+    }
+
 
     @media (max-width: 600px) {
         .flex-item {
@@ -146,11 +151,9 @@
         font-size: 0.9em;
         border: 1px solid #333;
         border-radius: 12px;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
         margin: 0.25em 0;
     }
     .card {
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
     .opacity {
         opacity: 0.6;
