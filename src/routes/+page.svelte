@@ -135,7 +135,7 @@
 					role="Programmer"
 					description="Roll around orc time"
 					videoSrc="/videos/orcball_loop.webm"
-					modal= {modals.OrcBall};
+					modal= {modals.OrcBall}
 				/>
 				<WorkItem
 					name="This Website"

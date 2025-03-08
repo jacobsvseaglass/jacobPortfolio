@@ -38,13 +38,6 @@ export const modals = {
         title: "Bug Blast Ultimate",
         videoSrc: ["https://www.youtube.com/embed/QkPhJ3ZGl7k", "https://www.youtube.com/embed/qre91nPNI8w", "https://www.youtube.com/embed/acukuFEKVp0"],
         captions: ["test", "test2"],
-        buttons: [
-            {
-                text: "Steam",
-                img: "/images/steam.svg",
-                link: ""
-            }
-        ],
         info: "AI Tools Programmer & VR Developer    |    Unity Engine 2021.3.17    |    5 People",
         about: "<p>Bug Blast Ultimate is a fast paced, style based neon FPS in which you have to fight through futuristic bugs with a large assortment of weaponry. Players must navigate procedurally generated levels, unlocking guns with limited ammo while wall jumping and dodging to rack up points and destroy a variety of enemies.</p> ",
         text: "<p>• Programmed a tool to create custom behavior trees in Unity.</p> <p> • Developed an editor tool to create blackboards.</p><p> • Used these tools in addition to an agent system I worked on to develop the core AI in the game.</p><p>• Ported the game to VR and adapted gameplay mechanics to function in virtual reality.</p>"
@@ -56,7 +49,7 @@ export const modals = {
             {
                 text: "Game Gallery",
                 img: "/images/digipen.png",
-                link: ""
+                link: "https://games.digipen.edu/games/anesthesia"
             }
         ],
         info: "Gameplay Programmer & Producer | Unreal Engine 4.26.2 | 17 People",
@@ -70,7 +63,7 @@ export const modals = {
             {
                 text: "Steam",
                 img: "/images/steam.svg",
-                link: ""
+                link: "https://store.steampowered.com/app/2686810/Dimlight_Dungeon/"
             }
         ],
         info: "Audio Programer & Producer | Custom C++ Engine | 13 People",
@@ -84,7 +77,7 @@ export const modals = {
             {
                 text: "Steam",
                 img: "/images/steam.svg",
-                link: ""
+                link: "https://store.steampowered.com/app/1348060/Bug_Blast/"
             }
         ],
         info: "Gameplay Programmer & Producer | Custom C++ Engine | 5 People",
@@ -105,7 +98,7 @@ export const modals = {
             {
                 text: "Itch",
                 img: "/images/itchio.svg",
-                link: ""
+                link: "https://lopea.itch.io/ingfish"
             }
         ],
         about: "GMTK 2023 Game Jam Submission. In this game you play a normal fishing scenario, but you are the fish! Survive as long as you can as you rack up points from eating baits and escaping danger. This project was made by a team of 3 people in one day on Unity."
@@ -117,7 +110,7 @@ export const modals = {
             {
                 text: "Itch",
                 img: "/images/itchio.svg",
-                link: ""
+                link: "https://gryphshot.itch.io/orc-ball-gmtk-2024"
             }
         ],
         about: "GMTK 2024 Game Jam Submission. In this game you roll around the map as an orc trapped inside a ball, growing bigger as everything sticks to you. This project was made by a team of 4 people in one day on Unity."
