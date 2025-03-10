@@ -22,6 +22,7 @@
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="modal-overlay" on:click={closeModal}>
     <div class="modal-content" on:click|stopPropagation>
         <div class="modal-header">
@@ -84,6 +85,7 @@
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
+        color: var(--color-text)
     }
     .modal-text {
         font-size: 1rem;
