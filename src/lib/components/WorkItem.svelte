@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Modal from './Modal.svelte';
     import { onMount, onDestroy } from 'svelte';
+    
     export let name = "Name";
     export let role = "Role";
     export let description = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.";
@@ -8,65 +8,60 @@
     export let imageSrc = "";
     export let tags: string[] = [];
     export let visibility = "visible";
-
     export let modal;
   
     let showModal = false;
+    let showPoster = false;
+    let videoElement: HTMLVideoElement | null = null;
+    let retryCount = 0;
+    const maxRetries = 3;
   
     function openModal() {
       showModal = true;
       document.body.style.overflow = 'hidden'; // Hide the body scroll bar
     }
+  
     function closeModal() {
       showModal = false;
       document.body.style.overflow = 'auto'; // Restore the body scroll bar
     }
-
-    let videoElement: HTMLVideoElement;
-    let retryCount = 0;
-    const maxRetries = 3;
-    let showPoster = false;
   
     function handleStallOrError() {
-        if (!videoElement) return;
-        if (retryCount < maxRetries) {
-            retryCount++;
-            console.warn(`Reloading video (attempt ${retryCount}/${maxRetries})`);
-            videoElement.load();
-            videoElement.play().catch((err) => {
-                console.error('Error replaying video:', err);
+      if (!videoElement) return;
+      if (retryCount < maxRetries) {
+        retryCount++;
+        console.warn(`Reloading video (attempt ${retryCount}/${maxRetries})`);
+        videoElement.load();
+        videoElement.play().catch((err) => {
+          console.error('Error replaying video:', err);
         });
-        } else {
+      } else {
         console.error("Max retries reached. Showing the first frame instead.");
-        // Try to ensure the video is at the beginning
         try {
-            videoElement.pause();
-            videoElement.currentTime = 0;
-        } catch(e) {
-            console.error("Error resetting video:", e);
+          videoElement.pause();
+          videoElement.currentTime = 0;
+        } catch (e) {
+          console.error("Error resetting video:", e);
         }
-            // Switch to displaying the poster image
-            showPoster = true;
-        }
-    } 
-
-    function handleVisibilityChange() {
-        if (document.visibilityState === 'visible') {
-            // Reinitialize each video by calling load(), which resets the playback state
-            document.querySelectorAll('video').forEach(video => {
-            video.load();
-            });
-        }
+        showPoster = true;
+      }
     }
-
+  
+    // Only run this code on the client side
     onMount(() => {
-        document.addEventListener('visibilitychange', handleVisibilityChange);
-    });
-
-    onDestroy(() => {
+      function handleVisibilityChange() {
+        if (document.visibilityState === 'visible') {
+          document.querySelectorAll('video').forEach(video => {
+            video.load();
+          });
+        }
+      }
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+      return () => {
         document.removeEventListener('visibilitychange', handleVisibilityChange);
+      };
     });
-</script>
+  </script>
   
 <!-- Work item display -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
