@@ -31,6 +31,7 @@
 				role="Prototype Developer"
 				description="An Unreal application exploring overlapping land-use philosophies in the Badlands National Park, South Dakota, through documentary film and interactive media."
 				videoSrc="/videos/strata_loop.webm"
+				imageSrc="/images/backup/strata_backup.webp"
 				tags={["UE5", "C++", "Blueprints", "Virtual Production"]}
 				modal= {modals.Strata}
 			/>
@@ -39,6 +40,7 @@
 				role="Gameplay Engineer"
 				description="Modular 3D internet framework that provides individual creators with the capacity to deploy their Unreal Engine-built content and connect it to the XLA ecosystem of features"
 				videoSrc="/videos/metasites_loop.webm"
+				imageSrc="/images/backup/metasites_backup.webp"
 				tags={["UE5", "C++", "Blueprints", "AI"]}
 				modal= {modals.Metasites}
 			/>
@@ -71,6 +73,7 @@
 					role="AI Tools Programmer / VR Developer"
 					description="Fast paced, style based neon FPS in which you have to fight through futuristic bugs with a large assortment of weaponry. BREAK"
 					videoSrc="/videos/bugblastultimate_loop.webm"
+					imageSrc="/images/backup/bugblastultimate_backup.webp"
 					tags={["Unity", "C#"]}
 					modal = {modals.BugBlastUltimate}
 				/>
@@ -79,6 +82,7 @@
 					role="Gameplay Programmer / Producer"
 					description="Atmospheric 3D puzzle horror game in which a young patient undergoing surgery at a hospital faces her fears in a surreal dreamscape."
 					videoSrc="/videos/anesthesia_loop.webm"
+					imageSrc="/images/backup/anesthesia_backup.webp"
 					tags={["Unreal", "C++"]}
 					modal= {modals.Anesthesia}
 				/>
@@ -87,6 +91,7 @@
 					role="Audio Programmer / Producer"
 					description="2D dark fantasy side scrolling brawler where the player controls a reptilian monster and travels within the ruins of a once mighty, heroic fortress."
 					videoSrc="/videos/dimlight_loop.webm"
+					imageSrc="/images/backup/dimlight_backup.webp"
 					tags={["Custom Engine", "C++"]}
 					modal= {modals.Dimlight}
 				/>
@@ -95,6 +100,7 @@
 					role="Systems Programmer / Tech Lead"
 					description="Top-down twin-stick space shooter where the player controls a spaceship and must stand against the hive of alien space bugs that are invading our solar system."
 					videoSrc="/videos/bugblast_loop.webm"
+					imageSrc="/images/backup/bugblast_backup.webp"
 					tags={["Custom Engine", "C++"]}
 					modal= {modals.BugBlast}
 				/>
@@ -103,6 +109,7 @@
 					role="Gameplay Programmer / Producer"
 					description="2D action platformer set in a post-apocalyptic underwater world. Fight your way through steam-punk robots and traverse through the dangerous landscape BREAK"
 					videoSrc="/videos/substeam_loop.webm"
+					imageSrc="/images/backup/substeam_backup.webp"
 					tags={["Custom Engine", "Javascript"]}
 					modal= {modals.Substeam}
 				/>
@@ -128,6 +135,7 @@
 					role="Programmer"
 					description="Play a normal fishing scenario, but you are the fish! "
 					videoSrc="/videos/ingfish_loop.webm"
+					imageSrc="/images/backup/ingfish_backup.webp"
 					modal= {modals.IngFish}
 				/>
 				<WorkItem
@@ -135,6 +143,7 @@
 					role="Programmer"
 					description="Roll around orc time"
 					videoSrc="/videos/orcball_loop.webm"
+					imageSrc="/images/backup/orcball_backup.webp"
 					modal= {modals.OrcBall}
 				/>
 				<WorkItem
