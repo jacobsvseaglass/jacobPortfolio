@@ -20,6 +20,13 @@
       showModal = false;
       document.body.style.overflow = 'auto'; // Restore the body scroll bar
     }
+
+    let videoElement: HTMLVideoElement;
+  
+    function handleStall() {
+        videoElement.load();  // Reload video to restart playback
+        videoElement.play();
+    }
 </script>
   
 <!-- Work item display -->
@@ -28,7 +35,7 @@
     <span>
         <div class="card">
             {#if videoSrc}
-                <video autoplay playsinline muted loop style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
+                <video bind:this={videoElement} on:stalled={handleStall} autoplay playsinline muted loop preload="auto" style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
                 <source src={videoSrc} type="video/webm">
                 This browser does not support videos
                 </video>
