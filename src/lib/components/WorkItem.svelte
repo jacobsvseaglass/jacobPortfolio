@@ -23,10 +23,12 @@
 
     let videoElement: HTMLVideoElement;
   
-    function handleStall() {
-        videoElement.load();  // Reload video to restart playback
-        videoElement.play();
-    }
+    function handleStallOrError() {
+        videoElement.load();
+        videoElement.play().catch((err) => {
+        console.error('Error replaying video:', err);
+    });
+  }
 </script>
   
 <!-- Work item display -->
@@ -35,7 +37,9 @@
     <span>
         <div class="card">
             {#if videoSrc}
-                <video bind:this={videoElement} on:stalled={handleStall} autoplay playsinline muted loop preload="auto" style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
+                <video bind:this={videoElement}
+                on:stalled={handleStallOrError}
+                on:error={handleStallOrError} autoplay playsinline muted loop preload="auto" style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
                 <source src={videoSrc} type="video/webm">
                 This browser does not support videos
                 </video>
