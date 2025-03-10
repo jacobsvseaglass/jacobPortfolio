@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount, onDestroy } from 'svelte';
     
+    import Modal from './Modal.svelte';
     export let name = "Name";
     export let role = "Role";
     export let description = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.";
@@ -9,6 +10,7 @@
     export let tags: string[] = [];
     export let visibility = "visible";
     export let modal;
+ 
   
     let showModal = false;
     let showPoster = false;
@@ -67,34 +69,37 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="flex-item" style="visibility: {visibility};" role="button" tabindex="0" on:click={openModal}>
     <span>
-        <div class="card">
-            {#if showPoster}
-                <!-- Show poster image if video fails -->
-                <img src={imageSrc} alt="Video first frame" style="width:100%; border-radius: 12px 12px 0 0;">
-            {:else}
-                <video bind:this={videoElement}
-                    on:stalled={handleStallOrError}
-                    on:error={handleStallOrError}
-                    autoplay playsinline muted loop preload="auto"
-                    style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
-                    <source src={videoSrc} type="video/webm">
-                    This browser does not support videos
-                </video>
-            {/if}
-            <div class="rounded-containers">
-                {#each tags as tag}
-                    <div class="rounded-container">{tag}</div>
-                {/each}
-            </div>
-            <div class="content">
-                <h3>{name}</h3>
-                <p class="opacity">{role}</p>
-                <p>{description}</p>
-            </div>
+      <div class="card">
+        {#if showPoster}
+          <!-- Fallback: Display poster image if video failed -->
+          <img src={imageSrc} alt="Video first frame" style="width:100%; border-radius: 12px 12px 0 0;" />
+        {:else}
+          {#if videoSrc}
+            <video bind:this={videoElement}
+              on:stalled={handleStallOrError}
+              on:error={handleStallOrError}
+              autoplay playsinline muted loop preload="auto"
+              style="width:100%; border-radius: 12px 12px 0 0;" height="auto">
+              <source src={videoSrc} type="video/webm">
+              This browser does not support videos.
+            </video>
+          {:else}
+            <img src={imageSrc} alt={name} style="width:100%;" />
+          {/if}
+        {/if}
+        <div class="rounded-containers">
+          {#each tags as tag}
+            <div class="rounded-container">{tag}</div>
+          {/each}
         </div>
+        <div class="content">
+          <h3>{name}</h3>
+          <p class="opacity">{role}</p>
+          <p>{description}</p>
+        </div>
+      </div>
     </span>
-</div>
-
+  </div>
   
 <!-- Conditionally render the modal -->
 {#if showModal}
