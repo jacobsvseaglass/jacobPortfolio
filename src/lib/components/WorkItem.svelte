@@ -121,6 +121,7 @@
     max-width: 600px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     }
     .flex-item[style*="visibility: hidden"] {
         height: 0;

@@ -15,8 +15,8 @@
 	<div class="startcontainer">
 		<img src="/images/portrait.jpg" alt="Portrait" class="rounded-image" width="300px" loading="eager" >
 		<div class="text-content">
-		  <p>Jacob Burke is a passionate software engineer with expertise in C++, C#, and JavaScript. Raised on a sailboat while traveling the world, he developed a love for creating games that bridge cultural and language barriers. After earning his BS in Computer Science and Game Design from DigiPen Institute of Technology, he led multi-discipline teams to develop and ship various games. Jacob co-created Strata, an immersive live performance tool, and presented it at a film festival in Germany. He then joined Hexagram as a Gameplay Engineer, tackling technical and design challenges to create engaging experiences.</p>
-		  <p>Jacob specializes in gameplay, tools, and engine programming. He also has additional skills in UI/UX design, gameplay design, and project management.</p>
+		  <p>Jacob Burke is a passionate software engineer with expertise in C++, C#, and JavaScript. Raised on a sailboat while traveling the world, he developed a love for creating games that bridge cultural and language barriers. While earning his BS in Computer Science and Game Design from DigiPen Institute of Technology, he led multi-discipline teams to develop and ship various games. Jacob co-created Strata, an immersive live performance tool, and presented it at a film festival in Germany. He then joined Hexagram as a Gameplay Engineer, tackling technical and design challenges to create engaging experiences.</p>
+		  <p>Jacob specializes in gameplay, tools, network, and engine programming. He also has additional skills in UI/UX design, gameplay design, and project management.</p>
 	
 		  <p>In his free time, Jacob enjoys sailing, painting, 3D printing, and taking care of his guinea pigs.</p>
 		</div>
@@ -145,21 +145,6 @@
 					videoSrc="/videos/orcball_loop.webm"
 					imageSrc="/images/backup/orcball_backup.webp"
 					modal= {modals.OrcBall}
-				/>
-				<WorkItem
-					name="This Website"
-					role="Programmer"
-					description="The whole website you are on right now"
-					videoSrc="/videos/bugblast_loop.webm"
-					modal= 0;
-				/>
-				<WorkItem
-					name="This Website"
-					role="Programmer"
-					description="The whole website you are on right now"
-					videoSrc="/videos/bugblast_loop.webm"
-					visibility="hidden"
-					modal= 0;
 				/>
 			</div>
 	</div>

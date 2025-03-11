@@ -30,6 +30,7 @@
   
 	button:hover {
 	  background-color: var(--color-highlight-0);
+	  cursor: pointer;
 	}
 </style>
   
