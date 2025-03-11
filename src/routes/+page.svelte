@@ -13,7 +13,7 @@
 
 <main>
 	<div class="startcontainer">
-		<img src="/images/portrait.jpg" alt="Portrait" class="rounded-image" width="300px" loading="eager" >
+		<img src="/images/portrait.webp" alt="Portrait" class="rounded-image" width="300px" loading="eager" >
 		<div class="text-content">
 		  <p>Jacob Burke is a passionate software engineer with expertise in C++, C#, and JavaScript. Raised on a sailboat while traveling the world, he developed a love for creating games that bridge cultural and language barriers. While earning his BS in Computer Science and Game Design from DigiPen Institute of Technology, he led multi-discipline teams to develop and ship various games. Jacob co-created Strata, an immersive live performance tool, and presented it at a film festival in Germany. He then joined Hexagram as a Gameplay Engineer, tackling technical and design challenges to create engaging experiences.</p>
 		  <p>Jacob specializes in gameplay, tools, network, and engine programming. He also has additional skills in UI/UX design, gameplay design, and project management.</p>
