@@ -1,38 +1,80 @@
-# sv
+# 🌐 My Portfolio Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Welcome to the source code for my personal portfolio — a fully custom-built site powered by [SvelteKit](https://kit.svelte.dev), deployed on my self-hosted **Ubuntu server** running on a **Raspberry Pi**.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🛠 Project Structure
+
+### `src/lib/components/`
+Reusable and self-contained UI components:
+- Buttons
+- Modals
+- Slideshows
+- Cards
+
+Each component lives in its own file and is fully styled using scoped CSS or utility classes.
+
+### `src/routes/`
+This directory defines the app's pages and layout:
+- Every page is a Svelte file in this folder.
+- Includes global layout components like headers and footers.
+- Route-based code splitting for performance.
+- Contains data file each modal pulls from
+
+---
+
+## 🚀 Development
+
+Install dependencies:
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+npm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start the dev server:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+---
 
-To create a production version of your app:
+## 🏗 Building for Production
+
+To generate an optimized production build:
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Then preview locally:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run preview
+```
+
+---
+
+## 📦 Deployment
+
+This site is hosted on my personal **Ubuntu server** running on a **Raspberry Pi**, which handles HTTPS with Nginx and serves the static content using a custom Node backend or adapter.
+
+To deploy:
+- Build with `npm run build`
+---
+
+## 🧩 Tech Stack
+
+- **SvelteKit**
+- **TypeScript**
+- **CSS Modules / SCSS**
+- **Nginx**
+- **Node.js**
+- Deployed on: **Raspberry Pi (Ubuntu 22.04 LTS)**
+
+---
+
+Feel free to explore the code, fork it, or use it as inspiration. If you have questions or feedback, feel free to open an issue or connect with me.
+
+---
